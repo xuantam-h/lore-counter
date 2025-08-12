@@ -1,0 +1,12 @@
+.color-picker{
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+}
+.btn-color{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}

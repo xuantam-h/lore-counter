@@ -1,0 +1,13 @@
+body{
+  display: block;
+  place-items: normal;
+  font-family: "Nata Sans", sans-serif;
+}
+#root {
+  text-align: center;
+}
+#main-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  min-height: 100vh;
+}

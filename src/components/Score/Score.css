@@ -1,0 +1,13 @@
+.player-score{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.counter{
+  font-size: 20rem;
+  margin: 0;
+  line-height: 1;
+}
+.btn-count{
+  font-size:2rem;
+}
