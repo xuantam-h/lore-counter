@@ -1,14 +1,18 @@
+@use '../../assets/styles/variables' as *;
+
 .player{
-  background-color: #e1e1e1;
   padding: 3rem;
   display: grid;
   grid-template-rows: 2fr;
-}
-.player-name{
-  font-size: 3rem;
-}
-.player-panel{
+
+  &-name{
+    font-size: 3rem;
+    color:$white;
+  }
+
+  &-panel{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  }
 }

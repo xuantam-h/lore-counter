@@ -1,4 +1,4 @@
-import './ColorPicker.css'
+import './ColorPicker.scss'
 
 const ColorPicker = ({event}) => {
     const colorList = ["#ff5c5c","#abfcff", "#9887ff", "#ffc675", "#ff95e5"];

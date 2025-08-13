@@ -1,6 +1,8 @@
+@use '../../assets/styles/variables' as *;
+
 .color-picker{
     display: flex;
-    gap:1rem;
+    gap:$s-gap;
     justify-content: center;
 }
 .btn-color{
@@ -8,5 +10,5 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 3px solid #fff;
+    border: 3px solid $white;
 }

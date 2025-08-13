@@ -1,5 +1,5 @@
 import { useState } from "react"
-import './Player.css'
+import './Player.scss'
 import Score from "../Score/Score"
 import ColorPicker from "../ColorPicker/ColorPicker"
 
