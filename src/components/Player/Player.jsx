@@ -2,6 +2,7 @@ import { useState } from "react"
 import './Player.scss'
 import Score from "../Score/Score"
 import ColorPicker from "../ColorPicker/ColorPicker"
+import Modal from "../Modal/Modal"
 
 const Player = ({defaultName, defaultColor}) => {
     const [newName, setNewName] = useState("")
@@ -12,6 +13,7 @@ const Player = ({defaultName, defaultColor}) => {
     const handleChangeColor = (color) => {
         setPlayerInfo({...playerInfo, bgColor: color})
     }
+    const [isOpen, setIsOpen] = useState(false)
     
     return (
         <div className="player" style={{backgroundColor: playerInfo.bgColor ? playerInfo.bgColor : defaultColor}}>
@@ -22,8 +24,11 @@ const Player = ({defaultName, defaultColor}) => {
             </div> */}
             <div className="player-panel">
                 <div className="player-name">{playerInfo.name ? playerInfo.name : defaultName}</div>
-                <ColorPicker event={handleChangeColor}/>
+                <button onClick={() => setIsOpen(true)}>Edit</button>
             </div>
+            <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+                    <ColorPicker event={handleChangeColor}/>
+            </Modal>
         </div>
     )
 }
